@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-reveal-deck-pack"
+  spec.name          = "lab-site-theme-al-folio"
   spec.version       = "0.1.0"
   spec.authors       = [""]
-  spec.email         = ["sarahmbrown@berkeley.edu"]
+  spec.email         = ["brownsarahm@uri.edu"]
 
   spec.summary       = "TODO: Write a short summary, because Rubygems requires one."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/ml4sts/lab-site-theme-al-folio"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
