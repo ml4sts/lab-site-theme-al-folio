@@ -2,33 +2,33 @@
 layout: default
 ---
 
-<div class="projects grid">
+<div class="people grid">
 
-  {% assign sorted_projects = site.projects | sort: "importance" %}
-  {% for project in sorted_projects %}
+  {% assign sorted_people = site.people | sort: "importance" %}
+  {% for person in sorted_people %}
   <div class="grid-item">
-    {% if project.redirect %}
-    <a href="{{ project.redirect }}" target="_blank">
+    {% if person.redirect %}
+    <a href="{{ person.redirect }}" target="_blank">
     {% else %}
-    <a href="{{ project.url | relative_url }}">
+    <a href="{{ person.url | relative_url }}">
     {% endif %}
       <div class="card hoverable">
-        {% if project.img %}
-        <img src="{{ project.img | relative_url }}" alt="project thumbnail">
+        {% if person.img %}
+        <img src="{{ person.img | relative_url }}" alt="person thumbnail">
         {% endif %}
         <div class="card-body">
-          <h2 class="card-title text-lowercase">{{ project.title }}</h2>
-          <p class="card-text">{{ project.description }}</p>
+          <h2 class="card-title text-lowercase">{{ person.title }}</h2>
+          <p class="card-text">{{ person.description }}</p>
           <div class="row ml-1 mr-1 p-0">
-            {% if project.github %}
+            {% if person.github %}
             <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}" target="_blank"><i class="fab fa-github gh-icon"></i></a>
+              <div class="icon" data-toggle="tooltip" title="GitHub Profile">
+                <a href="{{ person.github }}" target="_blank"><i class="fab fa-github gh-icon"></i></a>
               </div>
-              {% if project.github_stars %}
+              {% if person.github_stars %}
               <span class="stars" data-toggle="tooltip" title="GitHub Stars">
                 <i class="fas fa-star"></i>
-                <span id="{{ project.github_stars }}-stars"></span>
+                <span id="{{ person.github_stars }}-stars"></span>
               </span>
               {% endif %}
             </div>
