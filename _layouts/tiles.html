@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{{content}}
 <div class="projects grid">
 
   {% assign sorted_projects = site.documents | where:"collection", page.tilecollection | sort: 'importance' %}
