@@ -5,11 +5,8 @@ layout: default
 {{content}}
 <div class="projects grid">
 
-  {{page.tilecollection}}
-  {% assign sorted_projects = site.documents %}
-
   <!-- {% assign sorted_projects = site.documents | where:"collection", page.tilecollection | sort: 'importance' %} -->
-  <!-- {% assign sorted_projects = site.projects | sort: "importance" %} -->
+  {% assign sorted_projects = site.speaking | sort: "importance" %}
   {% for project in sorted_projects %}
   <div class="grid-item">
     {% if project.redirect %}
