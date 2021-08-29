@@ -6,7 +6,7 @@ layout: default
 <div class="projects grid">
 
   <!-- {% assign sorted_projects = site.documents | where:"collection", page.tilecollection | sort: 'importance' %} -->
-  {% assign sorted_projects = site.teaching | sort: "importance" %}
+  {% assign sorted_projects = site.teaching  %}
   {% for project in sorted_projects %}
   <div class="grid-item">
     {% if project.redirect %}
