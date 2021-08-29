@@ -41,6 +41,13 @@
             </a>
           </li>
           {% endif %}
+          {% if site.menulink %}
+          <!-- Blog -->
+          <li class="nav-item ">
+            <a class="nav-link" href="{{ site.menulink.url  }}"> {{site.menulink.title}}
+            </a>
+          </li>
+          {% endif %}
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: "title" %}
           {% for p in sorted_pages %}
