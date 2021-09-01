@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-<h2> Current Members</h2>
+<h2 class="projectgroup"> Current Members</h2>
+
+
 <div class="projects grid">
 
   {% assign sorted_people = site.people | sort: "importance" | where:"status","active"%}
@@ -45,7 +47,9 @@ layout: default
 
 </div>
 
-<h2> Lab Alumni </h2>
+<h2 class="projectgroup"> Lab Alumni </h2>
+
+
 <div class="projects grid">
 
   {% assign sorted_people = site.people | sort: "importance" | where:"status","alumni"%}
