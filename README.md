@@ -1,3 +1,6 @@
+**since [may 2022](https://github.com/ml4sts/ml4sts.github.io/commit/29c3baa06935a9fde2ae48b537561aa7487cd46b) the lab site no longer uses this theme**
+
+
 # al-folio
 
 [![build status](https://travis-ci.org/alshedivat/al-folio.svg?branch=master)](https://travis-ci.org/alshedivat/al-folio)
